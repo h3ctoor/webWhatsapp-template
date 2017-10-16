@@ -97,7 +97,7 @@ img{
   margin: 10px 30px;
   display: block;
   width: 45%;
-  border-radius: 5px;
+  border-radius: 15px;
   filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
   padding: 10px 20px;
   padding-bottom: 20px;
@@ -115,31 +115,11 @@ img{
 .benimGonderdigim{
   float: right;
   background-color: #dcf8c6 !important;
-}
-.benimGonderdigim:before{
-  content: "";
-  width: 0;
-  position: absolute;
-  right: -10px;
-  top: 0px;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 15px 0 0;
-  border-color: #dcf8c6 transparent transparent transparent;
+  border-top-right-radius: 0px !important;
 }
 .onunGonderdigi{
   float: left;
-}
-.onunGonderdigi:before{
-  position: absolute;
-  top:0px;
-  left: -10px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 15px 15px 0;
-  border-color: transparent #fff transparent transparent;
+  border-top-left-radius: 0px !important;
 }
 #mesajYaz{
   width: 100%;
@@ -196,17 +176,21 @@ input:focus{
 }
 .mesajlasmalar li:before{
   content: '';
-  width: 85%;
+  width: 80%;
   position: absolute;
   bottom: 0px;
   right: 0px;
   height: 1px;
   background-color: #e9ebeb;
 }
+.mesajlasmalar li:hover{
+  background-color: rgba(233, 235, 235,.5);
+  transition: 50ms all;
+}
 .mesajYazan{
   font-weight: 600;
   float: left;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .mIcerik{
   float: left;
